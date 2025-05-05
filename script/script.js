@@ -20,3 +20,12 @@ const groenten = [
     prijs: 0.7,
   },
 ];
+
+const lijst = document.querySelector("#lijst")
+
+// aanmaken fruiten
+groenten.forEach((groente) => {
+  const nieuweRegel = document.createElement("div")
+  nieuweRegel.innerHTML = groente.naam
+  lijst.appendChild(nieuweRegel)
+})
